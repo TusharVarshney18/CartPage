@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="Cart.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cart Page</h1>
+    </header>
+
+    <main>
+      <!-- Product Grid -->
+      <div class="product-grid" id="productContainer"></div>
+
+      <!-- Cart Summary -->
+      <div id="cartSummary"></div>
+    </main>
+
+    <!-- Buy Order Section -->
+    <section id="buyOrder">
+      <h2>Buy Order</h2>
+      <form id="buyOrderForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required />
+
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" required>
+          <option value="creditCard">Credit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="bankTransfer">Bank Transfer</option>
+        </select>
+
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+  </body>
+
+  <script src="cart.js"></script>
+</html>
